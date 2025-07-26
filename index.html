@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: red;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+    }
+
+    .banner {
+      height: 60vh;
+      background: url('https://source.unsplash.com/1600x900/?movie') no-repeat center center/cover;
+      display: flex;
+      align-items: flex-end;
+      padding: 2rem;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .row {
+      padding: 1rem 2rem;
+    }
+
+    .row h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .row__posters {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+    }
+
+    .row__poster {
+      max-height: 150px;
+      width: 100px;
+      background-color: #333;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">NETFLIX</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">New & Popular</a>
+      <a href="#">My List</a>
+    </nav>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="banner">
+    <h1>Featured Movie</h1>
+  </section>
+
+  <!-- Rows of Movie Posters -->
+  <section class="row">
+    <h2>Trending Now</h2>
+    <div class="row__posters">
+      <div class="row__poster"></div>
+      <div class="row__poster"></div>
+      <div class="row__poster"></div>
+      <div class="row__poster"></div>
+    </div>
+  </section>
+
+  <section class="row">
+    <h2>Top Picks for You</h2>
+    <div class="row__posters">
+      <div class="row__poster"></div>
+      <div class="row__poster"></div>
+      <div class="row__poster"></div>
+      <div class="row__poster"></div>
+    </div>
+  </section>
+
+  <section class="row">
+    <h2>New Releases</h2>
+    <div class="row__posters">
+      <div class="row__poster"></div>
+      <div class="row__poster"></div>
+      <div class="row__poster"></div>
+      <div class="row__poster"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Netflix Clone | Made for demo purposes
+  </footer>
+
+</body>
+</html>
